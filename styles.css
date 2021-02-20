@@ -1,0 +1,70 @@
+/* Change Highlight */
+::selection {
+  background: rgb(114, 95, 240);
+  color: black;
+}
+::-moz-selection {
+  background: rgb(114, 95, 240);
+  color: black;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(114, 95, 240);
+  font-family: monospace;
+  font-size: 3em;
+  margin: 0em auto;
+  max-width: 25em;
+}
+img {
+  width: 0.81em;
+  margin-bottom: -0.255em;
+  padding: 0.1em;
+  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges; /* Firefox                        */
+  image-rendering: -o-crisp-edges; /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
+}
+.roz {
+  background-color: white;
+  color: black;
+}
+
+h4 {
+  color: #fff;
+  border-bottom: white solid;
+  margin-bottom: 0.5em;
+}
+
+li {
+  list-style: square;
+  padding-bottom: 0.1em;
+}
+
+.sublist li {
+  color: rgb(194, 194, 194);
+  font-size: 0.7em !important;
+}
+
+a:link {
+  background-color: rgb(114, 95, 240);
+  color: #000;
+}
+
+a:visited {
+  background-color: rgb(114, 95, 240);
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+a:active {
+  background-color: #000;
+  color: #fff;
+}
