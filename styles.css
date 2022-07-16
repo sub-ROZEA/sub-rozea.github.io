@@ -2,11 +2,11 @@
 
 /* Change Highlight */
 ::selection {
-  background: rgb(248, 165, 255);
+  background: rgb(249, 224, 255);
   color: black;
 }
 ::-moz-selection {
-  background: rgb(248, 165, 255)
+  background: rgb(249, 224, 255);
   color: black;
 }
 
@@ -17,6 +17,9 @@ body {
   font-size: 3em;
   margin: 0em auto;
   max-width: 25em;
+  background-image: url(media/roz_header.avif);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 img {
   width: 0.81em;
@@ -54,14 +57,25 @@ li {
 }
 
 .sublist li {
-  color: rgb(242, 232, 237);
+  color: rgb(249, 224, 255);
   font-size: 0.7em !important;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  body {
+    font-size: 1.2em;
+    background-size: 200%;
+    background-position: center top;
+  }
 }
 
 a {
   padding: 0.1em;
   border-radius: 0.2em;
-
+  text-decoration: none;
 }
 
 a:link {
