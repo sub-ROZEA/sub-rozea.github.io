@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gluten&display=300');
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
 
 /* Change Highlight */
 ::selection {
@@ -47,15 +47,6 @@ h4 {
   margin-bottom: 0.5em;
 }
 
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-    a {
-      size: 10em;
-    }
-}
 
 li {
   list-style: square;
