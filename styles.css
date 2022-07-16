@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=300');
+
 /* Change Highlight */
 ::selection {
-  background: rgb(114, 95, 240);
+  background: rgb(248, 165, 255);
   color: black;
 }
 ::-moz-selection {
-  background: rgb(114, 95, 240);
+  background: rgb(248, 165, 255)
   color: black;
 }
 
 body {
   background-color: rgb(0, 0, 0);
-  color: rgb(114, 95, 240);
-  font-family: monospace;
+  color: rgb(248, 165, 255);
+  font-family: 'Gluten', monospace;
   font-size: 3em;
   margin: 0em auto;
   max-width: 25em;
@@ -31,12 +33,28 @@ img {
 .roz {
   background-color: white;
   color: black;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  margin-left: 0.2em;
+  font-size: 1.3em;
+  border-radius: 0.2em;
 }
 
 h4 {
-  color: #fff;
+  color: white;
   border-bottom: white solid;
   margin-bottom: 0.5em;
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    a {
+      size: 10em;
+    }
 }
 
 li {
@@ -45,17 +63,23 @@ li {
 }
 
 .sublist li {
-  color: rgb(194, 194, 194);
+  color: rgb(242, 232, 237);
   font-size: 0.7em !important;
 }
 
+a {
+  padding: 0.1em;
+  border-radius: 0.2em;
+
+}
+
 a:link {
-  background-color: rgb(114, 95, 240);
+  background-color: rgb(248, 165, 255);
   color: #000;
 }
 
 a:visited {
-  background-color: rgb(114, 95, 240);
+  background-color: rgb(248, 165, 255);
   color: #000;
 }
 
