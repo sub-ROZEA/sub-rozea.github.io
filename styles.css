@@ -1,99 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
-
-/* Change Highlight */
-::selection {
-  background: rgb(249, 224, 255);
-  color: black;
-}
-::-moz-selection {
-  background: rgb(249, 224, 255);
-  color: black;
+@font-face {
+  font-family: "Bedstead";
+  src: url("./fonts/bedstead.otf");
 }
 
-body {
-  background-color: rgb(0, 0, 0);
-  color: rgb(248, 165, 255);
-  font-family: 'Gluten', monospace;
-  font-size: 3em;
-  margin: 0em auto;
-  max-width: 25em;
-  background-image: url(media/roz_header.avif);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-img {
-  width: 0.81em;
-  margin-bottom: -0.255em;
-  padding: 0.1em;
-  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
-  image-rendering: -moz-crisp-edges; /* Firefox                        */
-  image-rendering: -o-crisp-edges; /* Opera                          */
-  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-  image-rendering: pixelated; /* Chrome */
-  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
-  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
-}
-.roz {
-  background-color: white;
-  color: black;
-  padding-top: 0.2em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  margin-left: 0.2em;
-  font-size: 1.3em;
-  border-radius: 0.2em;
-}
-
-h4 {
-  color: white;
-  border-bottom: white solid;
-  margin-bottom: 0.5em;
-}
-
-
-li {
-  list-style: square;
-  padding-bottom: 0.1em;
-}
-
-.sublist li {
-  color: rgb(249, 224, 255);
-  font-size: 0.7em !important;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-  body {
-    font-size: 1.2em;
-    background-size: 200%;
-    background-position: center top;
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
   }
 }
 
+body {
+  background-image: url("./media/roz_header.avif");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;
+  color: #ffdbea;
+  font-family: "Bedstead", sans-serif;
+  font-feature-settings: "palt";
+  font-size: 3em;
+  margin: 0em auto;
+  max-width: 25em;
+  filter: drop-shadow(0 0 0.5em #000000);
+  line-height: 1.1;
+}
+
+.roz-header {
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  text-align: center;
+  color: #d3fdff;
+}
+
 a {
-  padding: 0.1em;
-  border-radius: 0.2em;
+  background-color: #ffdbea;
+  padding: 0.05em 0.2em;
   text-decoration: none;
-}
-
-a:link {
-  background-color: rgb(248, 165, 255);
   color: #000;
-}
-
-a:visited {
-  background-color: rgb(248, 165, 255);
-  color: #000;
+  white-space: nowrap;
 }
 
 a:hover {
-  color: #000;
-  background-color: #fff;
+  color: #ffdbea;
+  text-decoration: underline;
+  background-color: #000;
+  animation: hue-rotate 0.5s 2 linear;
 }
 
-a:active {
-  background-color: #000;
-  color: #fff;
+p {
+  font-size: 0.7em;
+  color: #d3fdff;
+}
+
+code {
+  font-family: inherit;
+  font-weight: bold;
+  background-color: #d3fdff;
+  padding: 0 0.2em;
+  color: #000;
+}
+
+hr {
+  border: 0;
+  height: 4px;
+  background: #ffdbea;
+}
+
+.link-icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  margin-bottom: 0.1em;
+  vertical-align: middle;
+}
+
+a:hover .link-icon {
+  background-color: #ffdbea;
+}
+
+ul li ul li {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #d3fdff;
+  white-space: nowrap;
+}
+
+h2 img {
+  margin-left: 0.2em;
+  max-width: 90%;
 }
