@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .card {
+        @apply flex flex-row text-3xl text-black bg-rose-300 rounded border-2 border-rose-300 mix-blend-screen w-fit;
+        span {
+            @apply p-2 text-rose-300 bg-black rounded;
+        }
+    }
+    .card-username {
+        @apply ml-2;
+    }
+    body {
+        @apply px-4 xl:px-0
+    }
+}
+

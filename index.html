@@ -1,142 +1,150 @@
 <!DOCTYPE html>
-<head>
-  <title>sub.ROZEA</title>
-  <meta name="description" content="Home of my weird furry drawings." />
-  <meta name="language" content="en" />
-  <meta
-    name="viewport"
-    content="width=device-width,height=device-height,initial-scale=1.0"
-  />
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d55b5b" />
-  <meta name="msapplication-TileColor" content="#000000" />
-  <meta name="theme-color" content="#ffffff" />
-</head>
 <html lang="en">
-  <body>
+  <head>
+    <title>sub.ROZEA</title>
+    <meta name="description" content="Home of my weird furry drawings." />
+    <meta name="language" content="en" />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1.0"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d55b5b" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body class="container mx-auto mb-12 text-white">
     <main>
-      <h1>
-        <img
-          src="./media/roz-header.svg"
-          alt="sub.ROZEA - La Androida Kaprino"
-          class="roz-header"
-        />
-      </h1>
-      <h2 class="subtitle">Home of my weird furry drawings.</h2>
-      <hr />
-      <h2>
-        <img src="./media/h2/my-links.svg" alt="My Links" />
-      </h2>
-      <ul>
-        <li>
-          <a href="https://pixiv.me/sub_rozea"
-            ><img
-              src="./media/pixiv_logo.svg"
-              class="link-icon"
-              alt="Pixiv logo"
-            />Pixiv</a
-          >
-          <ul>
-            <li>sub_ROZEA</li>
+      <div class="flex flex-row mt-4 space-x-2">
+        <h1 class="text-2xl font-bold rounded border-b-2">
+          <span class="opacity-50">sub.</span
+          ><span class="px-2 text-black bg-white rounded">ROZEA</span>
+        </h1>
+        <h2 class="my-auto text-sm">&lt;La Androida Kaprino&gt;</h2>
+      </div>
+      <h2 class="my-2 text-2xl">My Links</h2>
+      <div class="flex flex-col space-x-16 sm:flex-row">
+        <div>
+          <ul class="flex flex-col space-y-2">
+            <li>
+              <a href="https://pixiv.me/sub_rozea" class="card"
+                ><img
+                  src="./media/pixiv_logo.svg"
+                  class="px-1"
+                  width="36"
+                  height="36"
+                  alt="Pixiv logo"
+                />
+                <span>Pixiv</span>
+              </a>
+              <p class="card-username">sub_ROZEA</p>
+            </li>
+            <li>
+              <a href="https://twitter.com/sub_ROZEA" class="card"
+                ><img
+                  src="./media/twitter_logo.svg"
+                  class="px-1"
+                  width="36"
+                  height="36"
+                  alt="Twitter logo"
+                /><span>Twitter</span></a
+              >
+              <p class="card-username">@sub_ROZEA</p>
+            </li>
+            <li>
+              <a href="https://rozea.sofurry.com/" class="card"
+                ><img
+                  src="./media/sofurry_logo.svg"
+                  class="px-1"
+                  width="36"
+                  height="36"
+                  alt="SoFurry logo"
+                /><span>SoFurry</span></a
+              >
+              <p class="card-username">ROZEA</p>
+            </li>
+            <li>
+              <a href="https://www.deviantart.com/sub-rozea/" class="card"
+                ><img
+                  src="./media/deviantart_logo.svg"
+                  class="px-1"
+                  width="36"
+                  height="36"
+                  alt="DeviantArt logo"
+                /><span>Deviantart</span></a
+              >
+              <p class="card-username">sub-ROZEA</p>
+            </li>
+            <li>
+              <a href="https://www.furaffinity.net/user/rozea/" class="card"
+                ><img
+                  src="./media/furaffinity_logo.svg"
+                  class="px-1"
+                  width="36"
+                  height="36"
+                  alt="FurAffinity logo"
+                /><span>Furaffinity</span></a
+              >
+              <p class="card-username">ROZEA</p>
+            </li>
+            <li>
+              <a href="https://inkbunny.net/ROZEA" class="card"
+                ><img
+                  src="./media/inkbunny_logo.svg"
+                  class="px-1"
+                  width="36"
+                  height="36"
+                  alt="Inkbunny logo"
+                /><span>Inkbunny</span></a
+              >
+              <p class="card-username">ROZEA</p>
+            </li>
+            <li>
+              <a href="https://www.weasyl.com/~rozea" class="card"
+                ><img
+                  src="./media/weasyl_logo.svg"
+                  class="px-1"
+                  width="36"
+                  height="36"
+                  alt="Weasyl logo"
+                /><span>Weasyl</span></a
+              >
+              <p class="card-username">~ROZEA</p>
+            </li>
           </ul>
-        </li>
-        <li>
-          <a href="https://twitter.com/sub_ROZEA"
-            ><img
-              src="./media/twitter_logo.svg"
-              class="link-icon"
-              alt="Twitter logo"
-            />Twitter</a
-          >
-          <ul>
-            <li>@sub_ROZEA</li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://rozea.sofurry.com/"
-            ><img
-              src="./media/sofurry_logo.svg"
-              class="link-icon"
-              alt="SoFurry logo"
-            />SoFurry</a
-          >
-          <ul>
-            <li>ROZEA</li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://www.deviantart.com/sub-rozea/"
-            ><img
-              src="./media/deviantart_logo.svg"
-              class="link-icon"
-              alt="DeviantArt logo"
-            />Deviantart</a
-          >
-          <ul>
-            <li>sub-ROZEA</li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://www.furaffinity.net/user/rozea/"
-            ><img
-              src="./media/furaffinity_logo.svg"
-              class="link-icon"
-              alt="FurAffinity logo"
-            />Furaffinity</a
-          >
-          <ul>
-            <li>ROZEA</li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://inkbunny.net/ROZEA"
-            ><img
-              src="./media/inkbunny_logo.svg"
-              class="link-icon"
-              alt="Inkbunny logo"
-            />Inkbunny</a
-          >
-          <ul>
-            <li>ROZEA</li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://www.weasyl.com/~rozea"
-            ><img
-              src="./media/weasyl_logo.svg"
-              class="link-icon"
-              alt="Weasyl logo"
-            />Weasyl</a
-          >
-          <ul>
-            <li>~ROZEA</li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+        <img src="./media/roz_kdlk.avif" width="500" class="mx-auto sm:mx-0" />
+      </div>
     </main>
-    <h2>
-      <img src="./media/h2/hello-there.svg" alt="Hello There" />
-    </h2>
-    <p>
-      I like to draw things. These things are usually cute androids… I hope.
-    </p>
-    <h2>
-      <img src="./media/h2/the-name.svg" alt="The Name" />
-    </h2>
-    <p>
-      So why is it <code>sub.ROZEA</code>? It&#39;s a spin on the latin term
-      <code>sub rosa</code>, which means in secret. The <code>rozea</code> part
-      is from the Ido word meaning rose colored (pink). The capitalization is
-      styled because of ARM&#39;s
-      <a href="https://www.arm.com/technologies/big-little" target="_blank"
-        >big.LITTLE</a
-      >.
-    </p>
+    <div class="mt-4 space-y-4">
+      <div>
+        <h2 class="mb-2 text-2xl">Hello There</h2>
+        <p>
+          I like to draw things. These things are usually cute androids… I hope.
+        </p>
+      </div>
+      <div>
+        <h2 class="mb-2 text-2xl">The Name</h2>
+        <p>
+          So why is it <i>sub.ROZEA</i>? It&#39;s a spin on the latin term
+          <i>sub rosa</i>, which means in secret. The <i>rozea</i> part is from
+          the Ido word meaning rose colored (pink). The capitalization is styled
+          because of ARM&#39;s
+          <a
+            href="https://www.arm.com/technologies/big-little"
+            target="_blank"
+            class="text-rose-300 underline"
+            >big.LITTLE</a
+          >.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
