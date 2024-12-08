@@ -1,3 +1,7 @@
+:root {
+  font-variant-ligatures: none;
+}
+
 @font-face {
   font-family: "Space Mono";
   src: url("./fonts/Space_Mono/SpaceMono-Regular.ttf");
