@@ -1,33 +1,11 @@
 :root {
-  font-variant-ligatures: none;
+  font-size: 150%;
 }
 
 @font-face {
-  font-family: "Space Mono";
-  src: url("./fonts/Space_Mono/SpaceMono-Regular.ttf");
-  font-weight: normal;
+  font-family: "RozeaBlock";
+  src: url("./fonts/rozea_block.ttf");
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Space Mono";
-  src: url("./fonts/Space_Mono/SpaceMono-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
-} 
-
-@font-face {
-  font-family: "Space Mono";
-  src: url("./fonts/Space_Mono/SpaceMono-Italic.ttf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Space Mono";
-  src: url("./fonts/Space_Mono/SpaceMono-BoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic;
 }
 
 body {
@@ -37,7 +15,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #000;
-  font-family: "Space Mono", monospace, "sans-serif";
+  font-family: "RozeaBlock", monospace, "sans-serif";
 }
 
 @media only screen and (max-width: 768px) {
