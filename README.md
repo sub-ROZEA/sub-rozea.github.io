@@ -1,6 +1,6 @@
 # sub.ROZEA
 
-<https://rozea.art>  
+<https://rozea.party>  
 <https://sub-rozea.github.io/>
 
 ## Development
