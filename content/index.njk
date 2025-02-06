@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+---
+
+
+<h1>sub.ROZEA</h1>
+{% set links = [
+{ title: "Pixiv", url: "https://pixiv.me/sub_rozea", icon: "pixiv", username: "sub_ROZEA" },
+{ title: "Bluesky", url: "https://bsky.app/profile/rozea.bsky.social", icon: "bluesky", username: "@rozea.bsky.social" },
+{ title: "Twitter", url: "https://twitter.com/sub_ROZEA", icon: "twitter", username: "@sub_ROZEA" },
+{ title: "SoFurry", url: "https://rozea.sofurry.com", icon: "sofurry", username: "ROZEA" },
+{ title: "SoFurry Beta", url: "https://sofurrybeta.com/u/ROZEA", icon: "sofurry", username: "@ROZEA" },
+{ title: "Furaffinity", url: "https://www.furaffinity.net/user/rozea", icon: "furaffinity", username: "ROZEA" },
+{ title: "Inkbunny", url: "https://inkbunny.net/ROZEA", icon: "inkbunny", username: "~ROZEA" }
+] %}
+<h2>Links</h2>
+{%- for link in links -%}
+  <a href={{ link.url }} class="social-link">
+    <img src="/img/link-icons/{{ link.icon }}_logo.svg" type="image/svg+xml" height="25" width="25" alt="{{link.icon}} icon"/>{{ link.title }}<span class="link-username">({{ link.username }})</span>
+  </a>
+{%- endfor -%}
+<h2>Latest Posts</h2>
+{%- for post in collections.post | reverse | limit(3) -%}
+  <h3><a href="{{ post.url }}">[{{ post.data.number }}] [{{ post.data.date }}] {{ post.data.title }}</a></h3>
+{%- endfor -%}
+<p>See all posts in the <a href="/archive">archive</a>.</p>

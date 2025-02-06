@@ -1,0 +1,39 @@
+---
+title: sub.ROZEA
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preload" href="/fonts/rozea_block.ttf" as="font" crossorigin="anonymous" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d55b5b" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#ffffff" />
+</head>
+<body>
+    <nav class="hidden-print">
+        <a href="/">sub.ROZEA</a>
+        <a href="/archive">Archive</a>
+        <a href="/about">About</a>
+    </nav>
+    <main>
+    {{ content | safe }}
+    </main>
+    <footer>
+          <picture title="Saluton!" class="hidden-print">
+            <source srcset="/img/rozea/roz_kdlk.avif" type="image/avif"  height="400"/>
+            <img src="/img/rozea/roz_kdlk.png" alt="Drawing of Rozea" height="400"/>
+          </picture>
+    </footer>
+</body>
+</html>
