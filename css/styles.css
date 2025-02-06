@@ -1,0 +1,132 @@
+:root {
+    --primary-color: rgb(253, 164, 175);
+}
+
+html {
+    overflow-y: scroll;
+    background-image: url("/img/background/roz_header.avif");
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    font-family: monospace;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 1em);
+    max-width: 40em;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media print {
+    .hidden-print {
+        display: none !important;
+    }
+
+    body {
+        max-width: unset;
+        min-height: unset;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: #e6e6e6;
+        background-blend-mode: color-dodge;
+    }
+
+    body {
+        color: #000;
+        background: rgba(255, 255, 255, 0.267);
+    }
+
+    :root {
+        --primary-color: rgb(151, 88, 96);
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    .social-link img {
+        filter: invert();
+    }
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+}
+
+footer picture {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+}
+
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img {
+    max-width: 100%;
+}
+
+img[width][height] {
+    height: auto;
+}
+
+.social-link {
+    display: block;
+    width: fit-content;
+}
+
+.social-link img {
+    margin-right: 1ch;
+}
+
+.social-link .link-username {
+    opacity: 0.6;
+    padding-left: 1ch;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        background-image: url("/img/background/roz_header_mobile.avif");
+    }
+}
+
+@font-face {
+    font-family: "RozeaBlock";
+    src: url("/fonts/rozea_block.ttf");
+}
+
+h1,
+h2 {
+    font-family: "RozeaBlock", sans-serif;
+}
+
+a:link {
+    color: var(--primary-color);
+}
+
+a:visited {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+a:active {
+    color: #fff;
+}
